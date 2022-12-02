@@ -60,7 +60,7 @@ int[] array = Array.ConvertAll(toArray, s => int.TryParse(s, out var x) ? x : 0)
 Console.WriteLine("Список введенных чисел:");
 PrintArray(array);
 Console.WriteLine();
-Console.WriteLine($"Пользователь ввел {FindNumbersAboveZero(array)} чисел больше нуля.");
+Console.WriteLine($"Из них введено чисел больше нуля: {FindNumbersAboveZero(array)}");
 
 
 
