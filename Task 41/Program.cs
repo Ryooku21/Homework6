@@ -61,5 +61,3 @@ Console.WriteLine("Список введенных чисел:");
 PrintArray(array);
 Console.WriteLine();
 Console.WriteLine($"Из них введено чисел больше нуля: {FindNumbersAboveZero(array)}");
-
-
