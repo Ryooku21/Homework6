@@ -22,7 +22,7 @@ void PrintArray(int[] arr)
     Console.Write("]");
 }
 
-string InputNumbers()
+string InputNumbers() // Пользователь вводит любое количество чисел до M 
 {
     string input = "";
     string result = "";
@@ -37,7 +37,7 @@ string InputNumbers()
     return result;
 }
 
-int FindNumbersAboveZero(int[] arr)
+int FindNumbersAboveZero(int[] arr) // Из введенных чисел находит количество чисел больше 0
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -55,12 +55,11 @@ Console.WriteLine("2. После ввода числа нажмите Enter.");
 Console.WriteLine("3. Чтобы завершить процедуру ввода, введите M.");
 
 string[] toArray = InputNumbers().Split();
-int[] array = Array.ConvertAll(toArray, s => int.TryParse(s, out var x) ? x : 0);
+int[] array = Array.ConvertAll(toArray, s => int.TryParse(s, out var x) ? x : 0); // Конвертирует строку в числовой массив, если в строке не число, ставит 0
 
 Console.WriteLine("Список введенных чисел:");
 PrintArray(array);
 Console.WriteLine();
 Console.WriteLine($"Из них введено чисел больше нуля: {FindNumbersAboveZero(array)}");
-
 
 
