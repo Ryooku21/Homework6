@@ -61,7 +61,7 @@ int[,] SortMatrixRows(int[,] matrix) // Упорядочиваем строки 
 }
 
 int[,] defaultMatrix = CreateMatrixRndInt(3, 4, 0, 9);
-Console.WriteLine("Задан двухмерный массив разменостью 3 на 4:");
+Console.WriteLine("Задан двухмерный массив размерностью 3 на 4:");
 PrintMatrix(defaultMatrix);
 SortMatrixRows(defaultMatrix);
 Console.WriteLine();
