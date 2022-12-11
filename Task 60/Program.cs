@@ -78,6 +78,7 @@ int[] SortArrayDescending(int[] array) // Упорядочиваем масси�
 {
     int temp = array[0];
     for (int i = array.Length - 1; i > 0; i--)
+    {
         for (int j = 0; j < i; j++)
         {
             {
@@ -89,6 +90,7 @@ int[] SortArrayDescending(int[] array) // Упорядочиваем масси�
                 }
             }
         }
+    }
     return array;
 }
 
