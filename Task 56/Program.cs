@@ -46,11 +46,9 @@ int FindLesserRow(int[,] matrix) //Находим первую строку с �
     int row = 0;
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             summ = summ + matrix[i, j];
-
         }
         if (lesserRow == 0)
         {
@@ -68,7 +66,6 @@ int FindLesserRow(int[,] matrix) //Находим первую строку с �
     }
     return row;
 }
-
 
 int[,] defaultMatrix = CreateMatrixRndInt(3, 4, 0, 10);
 Console.WriteLine("Задан двухмерный массив разменостью 3 на 4:");
