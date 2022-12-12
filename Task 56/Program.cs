@@ -72,5 +72,5 @@ Console.WriteLine("Задан двухмерный массив разменос
 PrintMatrix(defaultMatrix);
 Console.WriteLine();
 int minRow = FindLesserRow(defaultMatrix);
-Console.WriteLine($"Индекс строки с наименьшей суммой элементов {minRow}");
-Console.WriteLine($"Номер строки с наименьшей суммой элементов {minRow + 1}");
+Console.WriteLine($"Индекс строки с наименьшей суммой элементов: {minRow}");
+Console.WriteLine($"Номер строки с наименьшей суммой элементов: {minRow + 1}");
