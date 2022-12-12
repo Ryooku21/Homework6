@@ -11,8 +11,8 @@ int numberN = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 void NaturalNumbers(int num)
 {
     if (num == 0) return;
-    Console.Write ($"{num} ");
-    NaturalNumbers (num - 1);
+    Console.Write($"{num} ");
+    NaturalNumbers(num - 1);
 }
 
 if (numberN == 0)
@@ -22,5 +22,5 @@ if (numberN == 0)
 else
 {
     Console.WriteLine($"Выведены все натуральные числа от {numberN} до 1:");
-NaturalNumbers(numberN);
+    NaturalNumbers(numberN);
 }
