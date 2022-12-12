@@ -9,7 +9,7 @@ int numberM = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 Console.WriteLine("Введите натуральное число: ");
 int numberN = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
-int SummOfNumbersInBetweenStraight(int num1, int num2)
+int SummOfNumbersInBetweenStraight(int num1, int num2) // Находим сумму чисел от М до N если первое число меньше второго
 {
     int summ = 0;
     if (num1 == num2) return num2;
@@ -17,7 +17,7 @@ int SummOfNumbersInBetweenStraight(int num1, int num2)
     return summ;
 }
 
-int SummOfNumbersInBetweenReverse(int num1, int num2)
+int SummOfNumbersInBetweenReverse(int num1, int num2) // Находим сумму от числел М до N если второе число меньше первого
 {
     int summ = 0;
     if (num1 == num2) return num2;
