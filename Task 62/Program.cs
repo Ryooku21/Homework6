@@ -70,4 +70,5 @@ void PrintMatrix(int[,] matrix) // Выводим двухмерный масс�
 
 int[,] spiralMatrix = new int[4, 4];
 spiralMatrix = CreateSpiralMatrix(spiralMatrix);
+Console.WriteLine("Задана матрица 4 на 4, заполненная по спирали:");
 PrintMatrix(spiralMatrix);
